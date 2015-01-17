@@ -152,15 +152,21 @@ var user = {
     age: 0
 }
 
+  //Code Here
+for (prop in user) {
+  if (!user[prop]) {
+    delete user[prop];
+  }
+}
+
+// Once you get your truthy Object, Change the remaining values in the object to 
+// be specific to you (name: 'your name', username: 'your username'), rather 
+// than my information.
 
   //Code Here
-
-// Once you get your truthy Object, Change the remaining values in the object to be specific to 
-// you (name: 'your name', username: 'your username'), rather than my information.
-
-  //Code Here
-
-
+user.name = "Michael";
+user.username = "mikef";
+alert(JSON.stringify(myObj));
 
 
 // PROBLEM 8
@@ -178,13 +184,14 @@ var user = {
         }
 };
 
+  //Code Here
+user.name = "Tyler S. McGinnis";
+user.email = "tyler.mcginnis@devmounta.in";
+// Now call the sayName method that's on the user object which will alert the 
+// users email
 
   //Code Here
-
-// Now call the sayName method that's on the user object which will alert the users email
-
-  //Code Here
-
+user.sayName();
 
 
 
@@ -192,17 +199,23 @@ var user = {
 // Create an empty object called methodCollection.
 
   //Code Here
-
+var methodCollection = {};
 // Now add two methods (functions that are properties on objects) to your methodCollection
 // object. One called 'alertHello' which alerts 'hello' and another method called logHello
 // which logs 'hello' to the console. 
 
   //Code Here
-
+methodCollection.alertHello = function() {
+  alert("hello");
+};
+methodCollection.logHello = function() {
+  console.log("hello");
+};
 // Now call your alertHello and logHello methods.
 
   //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
