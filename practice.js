@@ -94,18 +94,25 @@ for (prop in me) {
 }
 
 
-
 // PROBLEM 5
 //Create an Object called 'album' with 5 keys named different song titles that you make 
 // up, with the values being the length of each song.
 
   //Code Here
+var album = {
+  song1: 5,
+  song22: 6,
+  song333: 7,
+  song4444: 8,
+  song55555: 9
+};
 
 // Now, loop through your album object alerting every song title individually.
 
   //Code Here
-
-
+for (prop in album) {
+  alert(prop);
+}
 
 
 // PROBLEM 6
@@ -113,12 +120,24 @@ for (prop in me) {
 // being their population (doesn't have to be accurate).
 
   //Code Here
-
-// Now, loop through your states object and if the states population is greater than 30K, alert that state.
+var states = {
+  Utah: 20000,
+  California: 32000,
+  Washington: 25000,
+  Idaho: 10000,
+  Montana: 15000
+};
+// Now, loop through your states object and if the states population is greater 
+// than 30K, alert that state.
 
   //Code Here
-
-
+for (prop in states) {
+  //alert(prop);  // prop
+  //alert(states[prop]);  // value of the prop
+  if (states[prop] > 30000) {
+    alert(prop);
+  }
+}
 
 
 // PROBLEM 7
