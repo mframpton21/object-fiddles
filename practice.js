@@ -52,17 +52,24 @@ favoriteThings.food = "Lettuce";
 // that is named color, with the value being the color of your backpack. */
 
   //Code here
+var backPack = {};
+
+var item = "firstPocket";
+
+backPack[item] = "chapstick";
 
 // After you do the above, alert your entire backPack object.
 
   //Code here
+//alert(JSON.stringify(myObj));
+alert(backPack);
 
 // You probably noticed that it just alerted [object Object].
 // Alerting to see the data in your Object doesn't work so well.
 // Instead, console.log your whole backPack object and then check out the console.
 
   //Code here
-
+console.log(backPack);
 
 
 // PROBLEM 4
@@ -70,11 +77,21 @@ favoriteThings.food = "Lettuce";
 // married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
   //Code Here
-
+var me = {
+  name: "Michael", 
+  age: 50, 
+  height: "5'8", 
+  gender: "male",
+  married: true,
+  eyeColor: "brown", 
+  hairColor: "brown"
+};
 // Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
   //Code Here
-
+for (prop in me) {
+  alert(prop + ": " + me[prop]);
+}
 
 
 
