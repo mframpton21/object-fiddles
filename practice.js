@@ -1,13 +1,17 @@
-//Once you complete a problem, open up Chrome and check the answer in the console.
+// Once you complete a problem, open up Chrome and check the answer in the console.
 
 
 // PROBLEM 1
 // Create an object called me. Give it a key of name with the value being your name, 
 // and another key of age with the value being your age. Then alert your name using dot notation.
 
-//Code here
+  //Code here
+var me = {
+  name: "Michael",
+  age: 50
+};
 
-
+alert(me.name);
 
 
 // PROBLEM 2
@@ -15,20 +19,27 @@
 // person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
   //Code here
-
+var favoriteThings = {
+  band: "The Band",
+  food: "Itailian",
+  person: "Jennifer",
+  book: "The Book",
+  movie: "The Movie",
+  holiday: "Thanksgiving" 
+};
 
 // After you've made your object, add another key named 'car' with the value being your 
 // favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Code here
-
+favoriteThings.car = "Fast";
+favoriteThings.brand = "Chevrolet"; 
 
 // Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key 
 // in your favoriteThings object to be '50 Shades of Gray'.
 
   //Code here
-
-
+favoriteThings.food = "Lettuce";
 
 
 // PROBLEM 3
